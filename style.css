@@ -1,0 +1,126 @@
+body{
+	font-size: 25px;
+	margin:0;
+	padding:0;
+	font-family:'Arial';
+	background-color: #98fb98;
+}
+h1{
+	color:#ffffff;
+	background-color: #595959;
+	width:50%;
+	float:left;
+	padding:6px 0 9px 0;
+}
+aside{
+	float: right;
+	width:30%;
+
+}
+.aboutMe{
+	width:70%;
+	float:left;
+}
+.aboutMe > p{
+	text-align: left;
+}
+.aboutMe > img{
+	float:left;
+}
+.portSec{
+	width:70%;
+	text-align: left;
+	float:left;
+}
+.contactSec{
+	width:70%;
+	text-align: left;
+	float:left;
+}
+.content{
+	margin-left: 10px;
+	border:5px 5px 5px 5px;
+	border-color:blue;
+	float:left;
+	width:70%;
+}
+.nav{
+	background-color: #595959;
+	color:#ffffff;
+	list-style:none;
+	text-align: center;
+	padding:24px 0 20px 0;
+	width:50%;
+	float: right;
+	margin:33.5px 0 0 0;
+}
+
+.nav > li{
+	display:inline-block;
+	padding:0 25px 0 25px;
+
+}
+.nav > li > a {
+	text-decoration: none;
+	color:#ffffff;
+}
+.nav > li > a:hover{
+	color:#c1c1c1;
+}
+.nav > li > a:focus{
+	color:black;
+}
+.sidenav{
+		background-color: #ffd700;
+		color:#ffffff;
+		text-align: center;
+		list-style:none;
+		width:30%;
+		float:right;
+}
+.sidenav > li {
+		padding:25px 0 25px 0;
+		font-size:50px;
+}
+.clearfix{
+	content: "";
+    clear: both;
+    display: table;
+    overflow:auto;
+}
+@media (max-width:980px){
+	body{
+		background-color: green;
+	}
+	.aboutMe > p {
+		float:left;
+	}
+	
+}
+@media ( max-width:768px){
+	body{
+		background-color: blue;
+	}
+	aside{
+		display:block;
+		float:none;
+	}
+	.sidenav{
+		text-align: center;
+		float:left;
+	}
+	.sidenav > li > a > i{
+		display:inline-block;
+	}
+}
+@media (max-width:640px){
+	body{
+		background-color: red;
+	}
+	h1{
+		float:none;
+	}
+	.nav{
+		float:none;
+	}
+}
